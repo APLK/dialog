@@ -57,6 +57,7 @@ public class AlertDialog {
 
         // 定义Dialog布局和参数
         dialog = new Dialog(context, R.style.AlertDialogStyle);
+        dialog.getWindow().setWindowAnimations(R.style.DialogAnimation);//自定义弹出动画 效果
         dialog.setContentView(view);
 
         // 调整dialog背景大小
